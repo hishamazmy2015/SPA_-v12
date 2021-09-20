@@ -37,7 +37,7 @@
       </div>
 
 
-      <div class="mb-3 form-group">
+      <!-- <div class="mb-3 form-group">
         <label for="productCategory">Product category</label>
         <input type="text"
           name="code"
@@ -45,14 +45,20 @@
           class="form-control"
           id="productCategory"
           placeholder="Name">
-      </div>
-
+      </div> -->
       <div class="mb-3 form-group">
         <!-- <select formControlName="title">
           <option selected>Select title</option>
           <option *ngFor="let item of titles" [value]="item.value"> {{item.name}} </option>
         </select> -->
-        <!-- <label for="productCategory">Category</label>
+        <select formControlName="category">
+          <option *ngFor="let cat of categories$ | async">
+            {{ cat.name }}
+          </option>
+        </select>
+
+
+        <label for="productCategory">Category</label>
         <Select type="text"
           name="category"
           formControlName="category"
@@ -63,7 +69,7 @@
           <option>AAA</option>
           <option>AAA</option>
           <option>AAA</option>
-        </Select> -->
+        </Select>
       </div>
 
 

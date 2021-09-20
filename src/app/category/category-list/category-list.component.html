@@ -24,11 +24,9 @@
 
                     <button type="button"
                         class="btn btn-danger"
-                        (click)="deleteProduct(row.id)"><i class="fas fa-trash"></i></button>
+                        (click)="deleteCat(row.id)"><i class="fas fa-trash"></i></button>
                 </ng-template>
             </ngx-datatable-column>
-
-
 
             <ngx-datatable-column name="status" prop="id">
                 <ng-template ngx-datatable-cell-template let-value="value"

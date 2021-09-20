@@ -29,14 +29,14 @@ export class CategoryListComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(fromActions.loadCategories());
     this.loadCategories();
-    
+
   }
 
   loadCategories() {
     this.categories$ = this.store.pipe(select(selectCategories));
   }
 
-  deleteProduct(id: number) {
+  deleteCat(id: number) {
     const categoriesObserver = {
       next: () => {
         console.log("category Deleted");
