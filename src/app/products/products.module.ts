@@ -1,18 +1,18 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { CommonModule } from "@angular/common";
-
-import { ProductsRoutingModule } from "./products-routing.module";
-import { ProductService } from "./services/product.service";
-import { ProductComponent } from "./components/product/product.component";
+import { EffectsModule } from "@ngrx/effects";
+import { StoreModule } from "@ngrx/store";
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ProductAddComponent } from "./components/product-add/product-add.component";
 import { ProductEditComponent } from "./components/product-edit/product-edit.component";
 import { ProductListComponent } from "./components/product-list/product-list.component";
-import { StoreModule } from "@ngrx/store";
+import { ProductComponent } from "./components/product/product.component";
+import { ProductsRoutingModule } from "./products-routing.module";
+import { ProductService } from "./services/product.service";
 import * as fromProductState from "./store";
-import { EffectsModule } from "@ngrx/effects";
 import { ProductEffects } from "./store/product.effects";
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 
 
 @NgModule({
@@ -27,13 +27,11 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     ProductsRoutingModule,
     FormsModule,
     NgxDatatableModule,
-
     FormsModule,
     ReactiveFormsModule,
-
     StoreModule.forFeature(
       fromProductState.productStateFeatureKey,
-      fromProductState.reducers,
+      fromProductState.reducers2,
       { metaReducers: fromProductState.metaReducers }
     ),
     EffectsModule.forFeature([ProductEffects])

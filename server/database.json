@@ -3,48 +3,35 @@
     {
       "id": 8,
       "name": "Intelligent Soft Pants",
-      "description": "Non porro quisquam ut nam ut sit omnis asperiores nostrum. Corporis excepturi sit eum autem animi dignissimos.",
-      "price": "391.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 4050
+      "code": 4050
     },
     {
       "id": 9,
       "name": "Gorgeous Wooden Gloves",
-      "description": "Est animi praesentium culpa. Cum vel debitis ut beatae quaerat quibusdam assumenda quia.",
-      "price": "908.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 88935
+      "code": 4050
     },
     {
       "id": 10,
       "name": "Handcrafted Fresh Fish",
-      "description": "Eos neque nihil nihil qui et. Beatae ipsam quia voluptatibus quo qui dolores.",
-      "price": "457.00",
-      "imageUrl": "https://source.unsplash.com/1600x900/?product",
-      "quantity": 76400
+      "code": "457.00"
     },
     {
       "name": "ProductionserverProductionserverProductionserver",
-      "description": "Productionserver",
-      "price": "223",
-      "quantity": 3333,
-      "imageUrl": "http://localhost:4200/product/add",
+      "code": 3333,
       "id": 11
     },
     {
       "name": "dddddd",
-      "description": "ddddddwwww",
+      "code": 3333,
       "id": 12
     },
     {
       "name": "Productionserver",
-      "description": "Productionserver",
-      "id": 13
+      "id": 13,
+      "code": 3333
     },
     {
       "name": "Productionserver",
-      "description": "qqq",
       "id": 14
     },
     {
@@ -58,6 +45,49 @@
       "code": "Productionserver",
       "category": "Productionserver",
       "id": 16
+    },
+    {
+      "name": "Productionserver999999999",
+      "code": "Productionserver999999999",
+      "category": "Productionserver999999999",
+      "id": 17
+    },
+    {
+      "name": "ProductionserverProductionserver",
+      "code": "ProductionserverProductionserver",
+      "category": "ProductionserverProductionserverProductionserver",
+      "id": 18
+    },
+    {
+      "name": "ssssssssssssssssssssssss",
+      "code": "ssssssssssssssssssssssss",
+      "category": "ssssssssssssssssssssssss",
+      "id": 19
+    },
+    {
+      "name": "ProductionserverProductionserver",
+      "code": "ProductionserverProductionserver",
+      "category": "ProductionserverProductionserver",
+      "id": 20
+    }
+  ],
+  "categories": [
+    {
+      "name": "dddddd",
+      "id": 12
+    },
+    {
+      "name": "Productionserver",
+      "id": 13
+    },
+    {
+      "name": "Productionserver",
+      "id": 14
+    },
+    {
+      "name": "Productionserverddddd",
+      "code": "Productionserverddddd",
+      "id": 15
     }
   ]
 }
