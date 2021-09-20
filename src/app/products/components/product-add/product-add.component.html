@@ -22,9 +22,6 @@
         </div>
       </div>
 
-
-
-
       <div class="mb-3 form-group" [ngClass]="{'is-invalid': isSubmitted &&
         gfc.code.errors}">
         <label for="productCode">Product Code</label>
@@ -35,50 +32,20 @@
           id="productCode"
           placeholder="Code">
       </div>
-
-
-      <!-- <div class="mb-3 form-group">
-        <label for="productCategory">Product category</label>
-        <input type="text"
-          name="code"
-          formControlName="category"
-          class="form-control"
-          id="productCategory"
-          placeholder="Name">
-      </div> -->
       <div class="mb-3 form-group">
-        <!-- <select formControlName="title">
-          <option selected>Select title</option>
-          <option *ngFor="let item of titles" [value]="item.value"> {{item.name}} </option>
-        </select> -->
-        <select formControlName="category">
+
+        <select formControlName="category" class="form-control">
           <option *ngFor="let cat of categories$ | async">
             {{ cat.name }}
           </option>
         </select>
-
-
-        <label for="productCategory">Category</label>
-        <Select type="text"
-          name="category"
-          formControlName="category"
-          class="form-control"
-          id="productCategory"
-          placeholder="Name">
-          <option>AAA</option>
-          <option>AAA</option>
-          <option>AAA</option>
-          <option>AAA</option>
-        </Select>
       </div>
 
 
       <button class="btn btn-primary m-1"
         [routerLink]="['/product/list']"><i class="fas fa-arrow-left"></i> Back
         To List</button>
-      <!-- <button class="btn btn-success m-1"
-        type="submit"
-        [disabled]="productForm.invalid">Add Product <i class="fas fa-plus"></i></button> -->
+
       <button class="btn btn-success m-1"
         type="submit">Add Product <i class="fas fa-plus"></i></button>
     </form>
